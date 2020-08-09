@@ -1,51 +1,51 @@
-Location,gaJobs
-"New York, NY",310
-"Chicago, IL",130
-"San Francisco, CA",119
-"Austin, TX",81
-"Los Angeles, CA",80
-"Charlotte, NC",78
-"Houston, TX",72
-"Dallas, TX",66
-"San Diego, CA",62
-"Philadelphia, PA",56
-"Denver, CO",47
-"San Antonio, TX",45
-"San Jose, CA",38
-"Phoenix, AZ",35
-"Jersey City, NJ",33
-"Tempe, AZ",31
-"Seattle, WA",30
-"Columbus, OH",29
-"Irving, TX",29
-"Plano, TX",28
-"Salt Lake City, UT",22
-"Santa Clara, CA",22
-"El Segundo, CA",19
-"Jacksonville, FL",19
-"Norfolk, VA",18
-"San Mateo, CA",18
-"Burbank, CA",17
-"Indianapolis, IN",17
-"Fort Worth, TX",16
-"Sunnyvale, CA",16
-"Mountain View, CA",15
-"Scottsdale, AZ",15
-"Palo Alto, CA",14
-"Brooklyn, NY",13
-"Cupertino, CA",13
-"Hampton, VA",13
-"Long Beach, CA",13
-"Redwood City, CA",12
-"Menlo Park, CA",11
-"Oakland, CA",11
-"Redmond, WA",11
-"Wilmington, DE",11
-"Richardson, TX",10
-"Centennial, CO",9
-"Downers Grove, IL",9
-"Foster City, CA",9
-"Lake Success, NY",9
-"Santa Monica, CA",9
-"Arlington, TX",8
-"Glendale, CA",8
+Location,gaJobs,City,State
+"New York, NY",310,New York, NY
+"Chicago, IL",130,Chicago, IL
+"San Francisco, CA",119,San Francisco, CA
+"Austin, TX",81,Austin, TX
+"Los Angeles, CA",80,Los Angeles, CA
+"Charlotte, NC",78,Charlotte, NC
+"Houston, TX",72,Houston, TX
+"Dallas, TX",66,Dallas, TX
+"San Diego, CA",62,San Diego, CA
+"Philadelphia, PA",56,Philadelphia, PA
+"Denver, CO",47,Denver, CO
+"San Antonio, TX",45,San Antonio, TX
+"San Jose, CA",38,San Jose, CA
+"Phoenix, AZ",35,Phoenix, AZ
+"Jersey City, NJ",33,Jersey City, NJ
+"Tempe, AZ",31,Tempe, AZ
+"Seattle, WA",30,Seattle, WA
+"Columbus, OH",29,Columbus, OH
+"Irving, TX",29,Irving, TX
+"Plano, TX",28,Plano, TX
+"Salt Lake City, UT",22,Salt Lake City, UT
+"Santa Clara, CA",22,Santa Clara, CA
+"El Segundo, CA",19,El Segundo, CA
+"Jacksonville, FL",19,Jacksonville, FL
+"Norfolk, VA",18,Norfolk, VA
+"San Mateo, CA",18,San Mateo, CA
+"Burbank, CA",17,Burbank, CA
+"Indianapolis, IN",17,Indianapolis, IN
+"Fort Worth, TX",16,Fort Worth, TX
+"Sunnyvale, CA",16,Sunnyvale, CA
+"Mountain View, CA",15,Mountain View, CA
+"Scottsdale, AZ",15,Scottsdale, AZ
+"Palo Alto, CA",14,Palo Alto, CA
+"Brooklyn, NY",13,Brooklyn, NY
+"Cupertino, CA",13,Cupertino, CA
+"Hampton, VA",13,Hampton, VA
+"Long Beach, CA",13,Long Beach, CA
+"Redwood City, CA",12,Redwood City, CA
+"Menlo Park, CA",11,Menlo Park, CA
+"Oakland, CA",11,Oakland, CA
+"Redmond, WA",11,Redmond, WA
+"Wilmington, DE",11,Wilmington, DE
+"Richardson, TX",10,Richardson, TX
+"Centennial, CO",9,Centennial, CO
+"Downers Grove, IL",9,Downers Grove, IL
+"Foster City, CA",9,Foster City, CA
+"Lake Success, NY",9,Lake Success, NY
+"Santa Monica, CA",9,Santa Monica, CA
+"Arlington, TX",8,Arlington, TX
+"Glendale, CA",8,Glendale, CA
