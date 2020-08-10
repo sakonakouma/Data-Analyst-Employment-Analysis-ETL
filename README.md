@@ -35,7 +35,18 @@ In the the GlassDoor notebook we:
 In the Zillow notebook we:
 
 
-In the Weather notebook we:
+In the Weather notebook we:Openwheathermap API Call
+Methodology
+Website: https://openweathermap.org/current
+
+Objectives: The Openweathermap API call aims to collect current and updated weather data from 50 US cities. The goal is to load a updated weather data in CSV format highlighting various climate variable such as temperature, precipitation, cloudiness, humidity, wind speed etc. The data called is available in JSON format. 
+
+Methods:
+The analysis started by creating an API key. Besides, Jupyter notebook was used to do the analysis which started by importing all dependencies such as json, pandas, requests. The 50 US cities were called by ID using Python request.get function. The JSON object for the 50 cities were loaded showing the weather data. Furthermore, the JSON strings were converted to dataframe. To do this, the JSON object were normalized using pandas.io.json. Then, the dataframes were concatenated and converted to csv files. 
+
+Results
+The CVS files display the weather variables such as min temperature, max temperature, cloudiness, humidity, feel-like temp, pressure and wind speed in the 50 selected cities. The weather information are going to be used to select the suitable cities for data analytics job seekers based on weather, home price and demographic data. 
+
 
 
 In Postgres we:
