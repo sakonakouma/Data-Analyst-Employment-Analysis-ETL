@@ -7,4 +7,4 @@ postg = {
     "host": "localhost",
     "user": "postgres",
     "passwd": "postgres",
-    "db": "SQLHomework"}
+    "db": "DAJobSearch"}
