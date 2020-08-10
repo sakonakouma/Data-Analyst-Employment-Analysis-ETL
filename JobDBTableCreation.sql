@@ -1,22 +1,22 @@
 -- Create jobs table
 CREATE TABLE jobs (
 	job_id VARCHAR NOT NULL PRIMARY KEY,
-	job_title VARCHAR(100) NOT NULL,
+	job_title VARCHAR(500) NOT NULL,
 	salary VARCHAR (30),
-	description VARCHAR(60),
+	description VARCHAR (1000000),
 	rating VARCHAR(10),
-	company_name VARCHAR (50),
-	job_location VARCHAR(30),
-	headquarters VARCHAR(30),
+	company_name VARCHAR (150),
+	job_location VARCHAR(100),
+	headquarters VARCHAR(100),
 	company_size VARCHAR (30),
 	founded VARCHAR (15),
-	ownership VARCHAR (30),
-	industry VARCHAR (30),
-	sector VARCHAR (30),
+	ownership VARCHAR (100),
+	industry VARCHAR (100),
+	sector VARCHAR (100),
 	revenue VARCHAR (50),
-	competitors VARCHAR (50),
-	city VARCHAR (30) NOT NULL,
-	location_state VARCHAR (2)
+	competitors VARCHAR (100),
+	city VARCHAR (1000) NOT NULL,
+	location_state VARCHAR (6)
 	
 );
 
@@ -45,3 +45,12 @@ CREATE TABLE weather (
 	
 );
 
+-- Create housing table
+CREATE TABLE housing (
+	city_id VARCHAR NOT NULL,
+	city_name VARCHAR NOT NULL PRIMARY KEY,
+	job_state VARCHAR(5) NOT NULL,
+	max_price VARCHAR(20),
+	min_price VARCHAR(20),
+	avg_price VARCHAR(20)
+);
