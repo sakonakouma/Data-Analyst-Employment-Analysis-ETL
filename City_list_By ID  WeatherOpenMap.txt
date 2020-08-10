@@ -1,0 +1,61 @@
+
+#city_names=
+["New York", 5039192
+"Chicago", 4887398
+"San Francisco", 5391959
+"Austin", 4671654
+"Los Angeles", 5344994
+"Charlotte", 4460243
+"Houston", 4699066
+"Dallas", 4704482
+"San Diego", 4726311
+"Philadelphia", 5131095
+"Denver", 5186794
+"San Antonio", 4726206
+"San Jose", 5392171
+"Phoenix", 5308655
+"Jersey City",5099836
+#"Tempe", 5317058
+"Seattle", 5809844
+"Columbus", 4509177
+"Irving", 4700168
+"Plano", 4719457
+"Salt Lake City", 5780993
+"Santa Clara", 5393015
+"El Segundo", 5345860 
+"Jacksonville", 4160021 
+"Norfolk", 4776222
+"San Mateo", 5392423
+"Burbank", 5331835 
+"Indianapolis", 4259418
+"Fort Worth", 4691930 
+"Sunnyvale", 5400075 
+"Mountain View", 5375480
+#"Scottsdale", 5313457 
+"Palo Alto", 5380748
+"Brooklyn", 5110302
+"Cupertino", 5341145
+"Hampton", 4762894 
+"Long Beach", 5367929
+"Redwood City", 5386834 
+"Menlo Park", 5372223
+"Oakland", 5378538
+"Redmond", 5808079
+"Wilmington",4499379 
+"Richardson", 4722625
+"Centennial", 5416541
+"Downers Grove", 4890119
+"Foster City", 5350159
+"Lake Success", 5123853
+"Santa Monica", 5393212
+"Arlington", 4671240
+
+
+CITY LIST BY ID
+
+5039192, 4887398, 5391959, 4671654, 5344994, 4460243, 4699066, 4704482, 4726311, 5131095, 5186794, 4726206, 5392171, 5308655, 5099836, 5317058, 5809844, 4509177, 4700168, 4719457, 
+
+
+5780993, 5393015, 5345860, 4160021, 4776222, 5392423, 5331835, 4259418, 4691930, 5400075, 5375480, 5313457, 5380748, 5110302, 5341145, 4762894, 5367929, 5386834, 5372223, 5378538, 
+
+5808079, 4499379, 4722625, 5416541, 4890119, 5350159, 5123853, 5393212, 4671240&
