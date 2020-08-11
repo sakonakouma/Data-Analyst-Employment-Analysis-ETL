@@ -1,5 +1,12 @@
+-- Create city table
+CREATE TABLE city (
+	city_id Integer NOT NULL Primary Key,
+	job_location VARCHAR(30) NOT NULL,
+	city_only VARCHAR(30)
+);
+
 CREATE TABLE jobs (
-	job_id VARCHAR NOT NULL PRIMARY KEY,
+	job_id Integer NOT NULL PRIMARY KEY,
 	job_title VARCHAR(500) NOT NULL,
 	salary VARCHAR (30),
 	description VARCHAR (1000000),
@@ -13,27 +20,20 @@ CREATE TABLE jobs (
 	industry VARCHAR (100),
 	sector VARCHAR (100),
 	revenue VARCHAR (50),
-	competitors VARCHAR (100),
-	city VARCHAR (1000) NOT NULL,
-	location_state VARCHAR (6)
+	competitors VARCHAR (100)	
 	
 );
 
 
--- Create city table
-CREATE TABLE city (
-	city_id VARCHAR NOT NULL,
-	job_location VARCHAR(30) NOT NULL,
-	city VARCHAR NOT NULL PRIMARY KEY,
-	job_state VARCHAR(5) NOT NULL
-);
+-- Add FK to salaries
+ALTER TABLE jobs add constraint job_location FOREIGN KEY(job_location) REFERENCES city(job_location);
 
 
 
 -- Create weather table
 CREATE TABLE weather (
-	weather_id VARCHAR NOT NULL,
-	city VARCHAR(30) NOT NULL PRIMARY KEY,
+	weather_id VARCHAR NOT NULL PRIMARY KEY,
+	weather_location VARCHAR(30) NOT NULL,
 	actual_temp VARCHAR (10),
 	temp_feels VARCHAR (10),
 	temp_min VARCHAR (10),
@@ -46,15 +46,18 @@ CREATE TABLE weather (
 	
 );
 
-
-
-
 -- Create housing table
 CREATE TABLE housing (
-	city_id VARCHAR NOT NULL,
-	city_name VARCHAR NOT NULL PRIMARY KEY,
-	job_state VARCHAR(5) NOT NULL,
-	max_price VARCHAR(20),
-	min_price VARCHAR(20),
-	avg_price VARCHAR(20)
+	city_id Integer NOT NULL PRIMARY KEY,
+	city_location VARCHAR NOT NULL,
+	max_price Integer,
+	min_price Integer,
+	avg_price Integer
 );
+
+
+
+
+
+
+

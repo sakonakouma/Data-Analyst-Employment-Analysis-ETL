@@ -70,7 +70,7 @@ Create new database called DAJobSearch
 Create Tables – city, housing, jobs, weather
 Imported csv files into their tables
 
-ERD included called:
+ERD included called: ERD
 
 
 
