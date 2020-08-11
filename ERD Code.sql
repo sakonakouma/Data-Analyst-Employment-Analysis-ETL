@@ -6,7 +6,7 @@
 -- two dots ('..' - without quotes).
 
 CREATE TABLE "jobs" (
-    "job_id" varchar   NOT NULL,
+    "job_id" int   NOT NULL,
     "job_title" varchar(500)   NOT NULL,
     "salary" varchar(30)   NOT NULL,
     "description" varchar(1000000)   NOT NULL,
@@ -15,32 +15,29 @@ CREATE TABLE "jobs" (
     "job_location" varchar(100)   NOT NULL,
     "headquarters" varchar(100)   NOT NULL,
     "company_size" varchar(30)   NOT NULL,
-    "founded" varchar(30)   NOT NULL,
+    "founded" varchar(15)   NOT NULL,
     "ownership" varchar(100)   NOT NULL,
     "industry" varchar(100)   NOT NULL,
     "sector" varchar(100)   NOT NULL,
     "revenue" varchar(50)   NOT NULL,
     "competitors" varchar(100)   NOT NULL,
-    "city" varchar(1000)   NOT NULL,
-    "location_state" varchar(6)   NOT NULL,
     CONSTRAINT "pk_jobs" PRIMARY KEY (
         "job_id"
      )
 );
 
 CREATE TABLE "city" (
-    "city_id" varchar   NOT NULL,
+    "city_id" int   NOT NULL,
     "job_location" varchar(30)   NOT NULL,
-    "city" varchar   NOT NULL,
-    "job_state" varchar(5)   NOT NULL,
+    "city_only" varchar(30)   NOT NULL,
     CONSTRAINT "pk_city" PRIMARY KEY (
-        "city"
+        "city_id"
      )
 );
 
 CREATE TABLE "weather" (
     "weather_id" varchar   NOT NULL,
-    "city" varchar(30)   NOT NULL,
+    "weather_location" varchar(30)   NOT NULL,
     "actual_temp" varchar(10)   NOT NULL,
     "temp_feels" varchar(10)   NOT NULL,
     "temp_min" varchar(10)   NOT NULL,
@@ -51,35 +48,28 @@ CREATE TABLE "weather" (
     "wind_degree" varchar(10)   NOT NULL,
     "cloud" varchar(10)   NOT NULL,
     CONSTRAINT "pk_weather" PRIMARY KEY (
-        "city"
+        "weather_id"
      )
 );
 
 -- Table documentation comment 1 (try the PDF/RTF export)
 CREATE TABLE "housing" (
-    "city_id" varchar   NOT NULL,
-    "city_name" varchar   NOT NULL,
-    "job_state" varchar(5)   NOT NULL,
-    "max_price" varchar(20)   NOT NULL,
-    "min_price" varchar(20)   NOT NULL,
-    "avg_price" varchar(20   NOT NULL,
+    "city_id" int   NOT NULL,
+    "city_location" varchar   NOT NULL,
+    "max_price" int   NOT NULL,
+    "min_price" int   NOT NULL,
+    "avg_price" int   NOT NULL,
     CONSTRAINT "pk_housing" PRIMARY KEY (
-        "city_name"
+        "city_id"
      )
 );
-
-ALTER TABLE "jobs" ADD CONSTRAINT "fk_jobs_city" FOREIGN KEY("city")
-REFERENCES "weather" ("city");
 
 ALTER TABLE "city" ADD CONSTRAINT "fk_city_job_location" FOREIGN KEY("job_location")
 REFERENCES "jobs" ("job_location");
 
-ALTER TABLE "city" ADD CONSTRAINT "fk_city_city" FOREIGN KEY("city")
-REFERENCES "weather" ("city");
+ALTER TABLE "weather" ADD CONSTRAINT "fk_weather_weather_location" FOREIGN KEY("weather_location")
+REFERENCES "city" ("job_location");
 
 ALTER TABLE "housing" ADD CONSTRAINT "fk_housing_city_id" FOREIGN KEY("city_id")
 REFERENCES "city" ("city_id");
-
-CREATE INDEX "idx_jobs_job_title"
-ON "jobs" ("job_title");
 
