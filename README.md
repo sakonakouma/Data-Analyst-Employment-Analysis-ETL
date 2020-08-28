@@ -9,7 +9,7 @@ o	Wen Shon
 o	Matt Moormeier
 
 Summary
-Our ETL project is geared toward our fellow students who will be seeking employement as data analyst upon completion of our Data Visualization Bootcamp.  We located a csv file on Kaggle of data analyst jobs on Glassdoor.com.  We determined the top 50 cites with number of data analyst job postings to limit our job search.  Then we web scrapped Zillow.com to calculate average apartment pricing for each of our 50 cities.  The last dataset we brought in was current weather data for each city.  Our goal is to provide quick information about the city that the most data analyst jobs are being offered.
+Our ETL project is geared toward our fellow students who will be seeking employment as data analyst upon completion of our Data Visualization Bootcamp.  We located a csv file on Kaggle of data analyst jobs on Glassdoor.com.  We determined the top 50 cities with number of data analyst job postings to limit our job search.  Then we web scrapped Zillow.com to calculate average apartment pricing for each of our 50 cities.  The last dataset we brought in was current weather data for each city.  Our goal is to provide quick information about the city that the most data analyst jobs are being offered.
 
 System Requirements
 o	Chrome Web Browser
